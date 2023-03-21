@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Livraria do Paulinho</title>
+</head>
+<style>
+    .my-slider-progress {
+      background: #ccc;
+    }
+    
+    .my-slider-progress-bar {
+      background: greenyellow;
+      height: 2px;
+      transition: width 400ms ease;
+      width: 0;
+    }
+  </style>
+<body>
+    <header>
+        <a class="logo" href="#">Livraria arroz</a>
+    </header>
+    
+    <article>
+        <header>
+            <h1>Livros que eu já li:</h1>
+        </header>
+    </article>
+
+<br>
+    <!--Slide de livros-->
+    <div class="slideshow-container">
+
+        <!-- Área de imagens e legenda -->
+        <div class="mySlides fade">
+          <img src="img/O hobbit.jpg" style="width:150px;"> <!--Imagem e tamanho-->
+          <p>O Hobbit</p><!--Legenda-->
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/O senhor dos aneis.jpg" style="width:150px;"> <!--Imagem e tamanho-->
+          <p>O Senhor dos aneis</p><!--Legenda-->
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/Territorio Lovecraft.jpg" style="width:150px"> <!--Imagem e tamanho-->
+          <p>Territorio Lovecraft</p><!--Legenda-->
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/Revolução dos bichos.jpg" style="width:150px"> <!--Imagem e tamanho-->
+            <p>A revolução dos bichos</p><!--Legenda-->
+          </div>
+      
+        <!-- Botão de vai e volta -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- Radio/Bolinha -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    <!--Slide de livros-->
+      <script src="app.js"></script>
+</body>
+</html>
