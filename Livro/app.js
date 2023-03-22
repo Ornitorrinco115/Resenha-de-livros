@@ -1,12 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Controle dos botões do Carrossel
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Controle da imagem na miniatura
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
