@@ -1,106 +1,206 @@
 * { 
-    margin: 0; padding: 0;
- }
- /*Cabeçalho*/
+  margin: 0; padding: 0;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*Cabeçalho*/
 .logo {
-    background-color: black;
-    display: flex;
-    height: 150px;
-    align-items: center;
-    justify-content: center;
-    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', fantasy;
-    color: #750dbb;
-    text-shadow: #000 2px 2px 0.2rem;
+  background-color: black;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', fantasy;
+  color: #750dbb;
+  text-shadow: #000 2px 2px 0.2rem;
 }
 
 header > h1 {
-    margin-bottom: 0;
-    align-items: center;
-    text-align: center;
+  margin-bottom: 0;
+  align-items: center;
+  text-align: center;
 }
 
 /*Container do slide*/
 .slideshow-container {
-    max-width: 200px;
-    margin: auto;
-    align-items: center;
-    text-align: center;
+  max-width: 200px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ocultar as imagens por padrão */
+.mySlides {
+  display: none;
+}
+
+/* Botões slide */
+.prev, .next {
+  cursor: pointer;
+  
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posição do botão */
+.next {
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+/*Hover dos botões */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Indicadores do slide */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animação slide */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer{
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(17, 16, 16);
+  color: #750dbb;
+}
+/*Responsividade*/
+@media (max-width: 1024px) {
+  .c1025 {
+   display: none;
+  }
   }
   
-  /* Ocultar as imagens por padrão */
-  .mySlides {
-    display: none;
+  @media (min-width: 1025px) {
+  .u1025 {
+   display: none;
   }
-  
-  /* Botões slide */
-  .prev, .next {
-    cursor: pointer;
-    
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Posição do botão */
-  .next {
-    right: 100px;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /*Hover dos botões */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Indicadores do slide */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Animação slide */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
   }
 
-  footer{
-    text-align: center;
-    padding: 3px;
-    background-color: rgb(17, 16, 16);
-    color: #750dbb;
-  }
-/*Responsividade*/
-  @media (max-width: 1024px) {
-    .c1025 {
-     display: none;
+  @media screen and (max-width: 500px) {
+  
+    .first,
+    .second,
+    .third {
+        width: 70%;
     }
-    }
+}
+
+
+/*css do container
+  #Cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+    position: relative;
     
-    @media (min-width: 1025px) {
-    .u1025 {
-     display: none;
-    }
-    }
+    
+}
+*/
+
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    background: #161623;
+    
+}
+
+.container .card{
+    position: relative;
+    width: 400px;
+    height: 700px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba( 0, 0,  0, 0.5);
+    background: rgba(255, 255 , 255,0.1 );
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    display: flex;
+    
+}
+
+
+
+.container .card .content h2{
+   position: absolute;
+   top: -80px;
+   right: 30px;
+   font-size: 8em;
+   color: rgba(255, 255, 255, 0.05);
+   pointer-events: none;
+   
+}
+
+.container .card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container .card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 6px 18px;
+    margin-top: 13px;
+    background: rgb(175, 171, 171);
+    color: #fff;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
