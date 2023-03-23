@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>Livraria do Paulinho</title>
-</head>
-<body>
-    <!--Cabeçalho-->
-    <header>
-        <a class="logo" href="#">Livraria arroz</a>
-    </header>
-    <br>
-    <article>
-        <header>
-            <h1>Livros que eu já li:</h1>
-        </header>
-    </article>
-    <!--Cabeçalho-->
-<br>
-    <!--Slide de livros-->
-    <div class="slideshow-container">
-        <!-- Área de imagens e legenda -->
-        <div class="mySlides fade">
-          <img src="img/O hobbit.jpg" style="width:150px;"> <!--Imagem e tamanho-->
-          <p>O Hobbit</p><!--Legenda-->
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="img/O senhor dos aneis.jpg" style="width:150px;"> <!--Imagem e tamanho-->
-          <p>O Senhor dos aneis</p><!--Legenda-->
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="img/Territorio Lovecraft.jpg" style="width:150px"> <!--Imagem e tamanho-->
-          <p>Territorio Lovecraft</p><!--Legenda-->
-        </div>
 
-        <div class="mySlides fade">
-            <img src="img/Revolução dos bichos.jpg" style="width:150px"> <!--Imagem e tamanho-->
-            <p>A revolução dos bichos</p><!--Legenda-->
-          </div>
-      <br>
-        <!-- Botão de vai e volta -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <!-- Radio/Bolinha/indicadores do slide -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    <!--Slide de livros-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Livraria do Paulinho</title>
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <a class="logo" href="#">Livraria arroz</a>
+  </header>
+  <br>
+  <article>
+    <header>
+      <h1>Livros que eu já li:</h1>
+    </header>
+  </article>
+  <!--Cabeçalho-->
+  <br>
+  <!--Slide de livros-->
+  <div class="slideshow-container">
+    <!-- Área de imagens e legenda -->
+    <div class="mySlides fade">
+      <img src="img/O hobbit.jpg" style="width:150px;"> <!--Imagem e tamanho-->
+      <p>O Hobbit</p><!--Legenda-->
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/O senhor dos aneis.jpg" style="width:150px;"> <!--Imagem e tamanho-->
+      <p>O Senhor dos aneis</p><!--Legenda-->
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Territorio Lovecraft.jpg" style="width:150px"> <!--Imagem e tamanho-->
+      <p>Territorio Lovecraft</p><!--Legenda-->
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Revolução dos bichos.jpg" style="width:150px"> <!--Imagem e tamanho-->
+      <p>A revolução dos bichos</p><!--Legenda-->
+    </div>
     <br>
-    <hr>
-    <footer>Arroz com feijão</footer>
-      <script src="app.js"></script>
+    <!-- Botão de vai e volta -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- Radio/Bolinha/indicadores do slide -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <!--Slide de livros-->
+  <br>
+  <div id="Cards">
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        
+        <h1>
+          Arroz
+        </h1>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        
+        <h1>
+          Arroz
+        </h1>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>A Universal Copyright Convention tal como revista em Paris em 24 de julho de 1971, Artigo III, ponto 1, afirma:
+    "Contratantes" Estado que, nos termos da sua lei interna, que exija como condição de copyright, com o cumprimento das formalidades, tais como o depósito, registro, notificação, certidões notariais, pagamento de taxas ou de fabricação, ou publicação em que Estado Contratante, devem considerar estes requisitos satisfeitos com respeito a todas as obras protegidas em conformidade com a presente Convenção e publicado pela primeira vez fora do seu território, e o autor de que não é um dos seus nacionais, se desde o momento da primeira publicação de todos os exemplares da obra publicada com a autoridade do autor ou titular de direitos de autor arcar com o símbolo©, acompanhada do nome do titular de direitos de autor e o ano da primeira publicação, colocada de tal forma e localização como para dar um pré-aviso razoável de reivindicação de direitos autorais."</footer>
+  <script src="app.js"></script>
 </body>
+
 </html>
